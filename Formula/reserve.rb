@@ -13,5 +13,9 @@ class Reserve < Formula
     bin.install "reserve/reserve" => "reserve"
   end
 
+  test do
+    output = shell_output(bin/"reserve --help 2>&1")
+    assert_match /^Usage of/, output
+  end
 end
 
