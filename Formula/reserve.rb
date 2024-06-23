@@ -7,8 +7,10 @@ class Reserve < Formula
   head "https://github.com/s4y/reserve.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
-    sha256 cellar: :any_skip_relocation, sonoma:       "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+    root_url "https://github.com/s4y/homebrew-reserve/releases/download/reserve-1.0.10"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura:      "6639d8a1c2efb9b78452bada714e01a301ad3f8a3cc11f21406534425d7edfc7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c8f7c0ab1c51f5bcf9b0502a27e150ac5c52a776e3ff4e0c9a9841b8dfea8994"
   end
 
   depends_on "go" => :build
