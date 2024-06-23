@@ -13,6 +13,11 @@ class Reserve < Formula
     bin.install "reserve/reserve" => "reserve"
   end
 
+  bottle do
+    sha256 arm64_sonoma: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+    sha256 big_sur: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+  end
+
   test do
     output = shell_output(bin/"reserve --help 2>&1")
     assert_match(/^Usage of/, output)
