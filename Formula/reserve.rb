@@ -14,8 +14,8 @@ class Reserve < Formula
   end
 
   bottle do
-    sha256 arm64_sonoma: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
-    sha256 big_sur: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+    sha256 cellar: :any_skip_relocation, sonoma:       "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
   end
 
   test do
