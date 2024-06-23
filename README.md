@@ -5,7 +5,7 @@ This is the official [Homebrew](https://brew.sh) formula for [Reserve](https://g
 ## How do I install this formula?
 
 ```shell
-> brew install s4y/reserve/reserve
+brew install s4y/reserve/reserve
 ```
 
 Or `brew tap s4y/reserve` and then `brew install <formula>`.
