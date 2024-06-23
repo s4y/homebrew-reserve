@@ -6,16 +6,16 @@ class Reserve < Formula
   license "Apache-2.0"
   head "https://github.com/s4y/reserve.git", branch: "main"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+    sha256 cellar: :any_skip_relocation, sonoma:       "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
+  end
+
   depends_on "go" => :build
 
   def install
     system "go", "build", "-o", "./reserve/reserve", "./reserve"
     bin.install "reserve/reserve" => "reserve"
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
-    sha256 cellar: :any_skip_relocation, sonoma:       "812a2ce2556412202df67ed1e8e3df2502e93ed3986b182295a8c758d6c4c0bc"
   end
 
   test do
