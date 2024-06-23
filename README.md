@@ -1,8 +1,12 @@
-# S4y Reserve
+# homebrew-reserve
 
-## How do I install these formulae?
+This is the official [Homebrew](https://brew.sh) formula for [Reserve](https://github.com/s4y/reserve).
 
-`brew install s4y/reserve/<formula>`
+## How do I install this formula?
+
+```shell
+> brew install s4y/reserve/reserve
+```
 
 Or `brew tap s4y/reserve` and then `brew install <formula>`.
 
