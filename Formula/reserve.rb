@@ -16,7 +16,7 @@ class Reserve < Formula
     sha256 cellar: :any_skip_relocation, sonoma:         "06ca762d9337ab096b4a24f0463d7562d9e6da0f74bb3c3b73200e0444d47589"
     sha256 cellar: :any_skip_relocation, ventura:        "06ca762d9337ab096b4a24f0463d7562d9e6da0f74bb3c3b73200e0444d47589"
     sha256 cellar: :any_skip_relocation, monterey:       "06ca762d9337ab096b4a24f0463d7562d9e6da0f74bb3c3b73200e0444d47589"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c8f7c0ab1c51f5bcf9b0502a27e150ac5c52a776e3ff4e0c9a9841b8dfea8994"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "c8f7c0ab1c51f5bcf9b0502a27e150ac5c52a776e3ff4e0c9a9841b8dfea8994"
   end
 
   depends_on "go" => :build
