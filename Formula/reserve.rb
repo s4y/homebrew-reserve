@@ -1,13 +1,13 @@
 class Reserve < Formula
   desc "Live reloading web server with extra goodies"
   homepage "https://github.com/s4y/reserve"
-  url "https://github.com/s4y/reserve/archive/refs/tags/v1.0.11.tar.gz"
-  sha256 "b3ba6d029a32e01e6cbde79180829d27e0c46c386c10468420f24421adbd1df9"
+  url "https://github.com/s4y/reserve/archive/refs/tags/v1.0.12.tar.gz"
+  sha256 "ba6eee1aaebb0a4f30f2e83025af6c82055c0240ef723b4698d95d574d84da37"
   license "Apache-2.0"
   head "https://github.com/s4y/reserve.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/s4y/homebrew-reserve/releases/download/reserve-1.0.11"
+    root_url "https://github.com/s4y/homebrew-reserve/releases/download/reserve-1.0.12"
     rebuild 1
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "a4e8eecbf946826115badb79a29fd0bf2e187f0accff9506349d6e53e4841f42"
     sha256 cellar: :any_skip_relocation, ventura:      "42dc7ce98aa1de56ff039e9fae21a062c514aca68020a9430b03c4ac0cc94c34"
