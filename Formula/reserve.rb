@@ -8,10 +8,9 @@ class Reserve < Formula
 
   bottle do
     root_url "https://github.com/s4y/homebrew-reserve/releases/download/reserve-1.0.12"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "a4e8eecbf946826115badb79a29fd0bf2e187f0accff9506349d6e53e4841f42"
-    sha256 cellar: :any_skip_relocation, ventura:      "42dc7ce98aa1de56ff039e9fae21a062c514aca68020a9430b03c4ac0cc94c34"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9564ae62adba3c0018a494dfce00119a5fdf75ff4f02bf7d41e586f91f6315f9"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "42a402053895880571645a61de6ccd3e700cc82e93daf3e8bd233701efc67b60"
+    sha256 cellar: :any_skip_relocation, ventura:      "1cfa4554d6f3d49c88f5cb5a20c9ee9e437ce0ed4f30ff638e07d3924c2192ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a0c584db11716245030009f91f19c99d1f612cdb75ab4742ece3ca089ba48c7f"
   end
 
   depends_on "go" => :build
