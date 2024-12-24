@@ -10,7 +10,8 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-12, macos-13, macos-latest]
+        os: [ubuntu-latest, macos-latest]
+        arch: [amd64, arm64]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Homebrew
@@ -32,10 +33,12 @@ jobs:
 
       - run: brew test-bot --only-formulae
         if: github.event_name == 'pull_request'
+        env:
+          GOARCH: ${{ matrix.arch }}
 
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
-          name: bottles_${{ matrix.os }}
+          name: bottles_${{ matrix.os }}_${{ matrix.arch }}
           path: '*.bottle.*'
