@@ -1,8 +1,8 @@
 class Reserve < Formula
   desc "Live reloading web server with extra goodies"
   homepage "https://github.com/s4y/reserve"
-  url "https://github.com/s4y/reserve/archive/refs/tags/v1.1.tar.gz"
-  sha256 "7f5a11f9030f05f85b730a89ef795935ec48f647561fdbc1f7659d91646b4e31"
+  url "https://github.com/s4y/reserve/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "ceb293f0cd51f33f07a461a3e7ffa5ebe94e069ff275fe38614aa4238e9eeac9"
   license "Apache-2.0"
   head "https://github.com/s4y/reserve.git", branch: "main"
 
